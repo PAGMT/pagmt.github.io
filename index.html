@@ -1,0 +1,137 @@
+---
+title: PAGMT | Palo Alto Girls Math Tournament
+---
+<!DOCTYPE html>
+<html lang="en">
+{% include head.html home="true" fade="true"%}
+<body>
+<main class="vh-100 d-flex flex-column align-items-center justify-content-between">
+<!--    Put navbar inside so that the vh-100 calculation includes it. Bit hacky but should work.-->
+    {% include navbar.html %}
+    <div class="container">
+        <h1 class="hero">PAGMT</h1>
+        <h2 id="date" class="date mb-4" style="color:#F8F8FF;text-shadow: 0 0 10px rgba(255, 255, 255, 0.481);">May 9th 2025 @ Palo Alto High School</h2>
+        <div class="Register mb-3">
+            <a id="registerButton" style="width: 33%; text-align: center;">REGISTRATION WILL OPEN SOON</a> 
+        </div>
+       <!--
+        <div class="Register mb-3">
+            <a id="registerButton" href="" target="_blank">REGISTER</a>
+        </div>
+
+        <div class="Register">
+            <a id="registerButton" href="" target="_blank">INFO</a>
+        </div>
+    -->
+
+
+    </div>
+    <div onclick="scrollToSection()" style="cursor: pointer;">
+        <img id="delayed-button" class="m-5" src="/images/downarrow.png" alt="down arrow">
+    </div>
+</main>
+
+<div class="AboutUs text-center vh-100 d-flex flex-column justify-content-center">
+    <div class="col-12">
+        <div class="heading fw-bold pt-0" data-delay="0">
+            <div class="fade-in-text">ABOUT PAGMT</div>
+        </div>
+            <div class="bodyText" style="color: #212427;">
+                <div class="fade-in-text" data-delay="100">The Palo Alto Girls Math Tournament (PAGMT)<br></div>
+                <div class="fade-in-text" data-delay="200">is a math competition for middle school girls.<br></div>
+                <div class="fade-in-text" data-delay="300">Hosted by a group of Paly students, we hope<br></div>
+                <div class="fade-in-text" data-delay="400">to inspire prospective female mathematicians<br></div>
+                <div class="fade-in-text" data-delay="500">with a challenging yet enjoyable competition.<br></div>
+                <div class="fade-in-text" data-delay="600">Check out <a href="/contest">Contest Page</a> for more information.<br></div>
+                    
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="FAQ">
+    <div class="container-fluid">
+        <div class="fade-in-text" data-delay="0">
+            <div>FREQUENTLY ASKED QUESTIONS</div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-12">
+                <div class="fade-in-text" data-delay="100">
+                    <div class="question"> WHERE WILL PAGMT BE HELD?</div>
+                </div>
+                <div class="fade-in-text" data-delay="200">
+                    <div class="answer"> PAGMT will be held in-person at Palo Alto High School's MAC building on
+                        May 9th, 2025. The contest will take place between 5:00 PM and 8:30 PM.
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-12">
+                <div class="fade-in-text" data-delay="300">
+                    <div class="question"> WHO CAN ATTEND?</div>
+                </div>
+                <div class="fade-in-text" data-delay="400">
+                    <div class="answer"> PAGMT is free to attend and is open to all middle school girls, not just limited to PAUSD Students. Highly motivated elementary students should also come.</div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-12">
+                <div class="fade-in-text" data-delay="500">
+                    <div class="question"> WHAT IS THE CONTEST FORMAT?</div>
+                </div>
+                <div class="fade-in-text" data-delay="600">
+                    <div class="answer"> The contest will be a 60 minute long individual exam. Problems will be free response and will cover Algebra, Geometry, Combinatorics, and Number Theory.
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-12">
+                <div class="fade-in-text" data-delay="700">
+                    <div class="question"> WHAT SHOULD I BRING?</div>
+                </div>
+                <div class="fade-in-text" data-delay="800">
+                    <div class="answer"> Contestants may use Pencils, Pens, Rulers, and Compasses. Noteably, protractors, caclulators, or any other computation device is not allowed. Blank Paper will be provided during the competition. </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="Sponsors">
+    <div class="container">
+        <div class="display-1 fw-medium">OUR SPONSORS</div>
+
+        <div class="sponsor-tier" style="color: var(--green);">Join Us Today</div>
+        
+        
+
+        <!--
+        <div class = "sponsor-tier" style="color: #93CFFB;">PLATINUM</div>
+        <div class="row">
+            <div class="col-lg-4 col-12">
+                <a href="https://example.com" target="_blank"><img src="/images/" class="w-75" alt="Logo Logo"></a>
+            </div>
+        </div>
+        <div class = "sponsor-tier" style="color: #ffd700;">GOLD</div>
+        <div class="row">
+        </div>
+
+        <div class = "sponsor-tier" style="color: #c0c0c0;">SILVER</div>
+        <div class="row">
+        </div> 
+        <div class = "sponsor-tier" style="color: #CD7F32;">BRONZE</div>
+        <div class="row">
+        </div> 
+        <div class = "sponsor-tier">PARTNERS</div>
+        <div class="row">
+        </div>
+        -->
+
+        <!--<div class="my-5 fs-6" style="letter-spacing: 2px;">Find our sponsorship prospectus <a href="/docs/Sponsorship_Prospectus.pdf#zoom=36" target="_blank">here</a>.</div>-->
+    </div>
+</div>
+<footer class="text-center">
+    <p>&copy; 2025 Palo Alto Girls Math Tournament. All rights reserved.</p>
+</footer>
+</body>
+</html>
+

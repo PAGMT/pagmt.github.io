@@ -1,0 +1,7 @@
+- name: index.html
+  link: /
+  title: Home
+- name: contest.html
+  link: /contest
+  title: PAGMT
+

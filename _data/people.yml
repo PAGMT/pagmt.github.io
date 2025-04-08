@@ -1,6 +1,34 @@
-- name: Nathan Ye
+- name: Krittika Chandra
   role: Organizer
-  image: nathan.png
-  description: Nathan is a senior at Palo Alto High School. He is a participant in the USACO Platinum division and a 6-time AIME Qualifier. He also enjoys CTFing with his friends.
+  image: krittika.png
+  description: Krittika is a freshman at Palo Alto High School. She is a 3-time USAJMO qualifier and has participated in a few math summer programs. Outside of math, she likes competitive programming and she plays violin in Paly Orchestra.
 
-  
+- name: Oscar Varodayan
+  role: Organizer
+  image: oscar.png
+  description: Oscar is a freshman at Palo Alto High School. He is a 3-time AIME qualifier and has participated in many competitions such as MATHCOUNTS and BAMO. Other than math, Oscar enjoys competitive programming, science fiction and astronomy. He is excited to create problems that require interesting insights to solve.
+
+- name: Lucas Lin
+  role: Organizer
+  image: lucas.png
+  description: Lucas is a freshman at Palo Alto High School. He has participated in a few math summer programs. Besides doing math, Lucas enjoys Physics, participating in the Science Olympiad, and playing tennis. 
+
+- name: Jade Zhang
+  role: Organizer
+  image: jade.png
+  description: Jade is a junior at Palo Alto High School. She is an AIME qualifier and has participated in the Ross Mathematics Program during the summer of 2024. In addition to math, she enjoys running, reading, and playing ultimate frisbee.
+
+- name: Joycelyn Zhou
+  role: Organizer
+  image: joycelyn.png
+  description: Joycelyn is a freshman at Palo Alto High School. She has attended AIME multiple times and has participated in several math competitions. Outside of math, she also participates on the PALY robotics and field hockey team.
+
+- name: Kaitlin Ye
+  role: Organizer
+  image: kaitlin.png
+  description: Kaitlin is a freshman at Palo Alto High School. She is a 2-time AIME qualifier and has also participated in a few other math competitions. Outside of math, she enjoys programming and playing softball.
+
+- name: Beinan Ren
+  role: Organizer
+  image: beinan.png
+  description: Beinan Ren is a freshman who loves math!

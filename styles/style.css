@@ -207,6 +207,10 @@ main div.Contest a:hover {
     opacity: 1;
 }
 
+.card{
+    border: none;
+}
+
 .card-border {
     border-radius: 1rem;
     border: 0.23vw solid var(--bs-border-color);

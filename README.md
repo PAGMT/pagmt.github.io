@@ -1,6 +1,6 @@
-# BAPC_Website
+# PAGMT_Website
 
-This is the website for the Bay Area Programming Contest, hosted by Gunn Competitive Programming Club.
+This is the website for the Palo Alto Girls Math Tournament
 
 ### Development
 See the [Jekyll docs](https://jekyllrb.com/docs/step-by-step/01-setup/) for setup.

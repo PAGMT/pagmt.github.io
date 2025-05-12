@@ -455,7 +455,7 @@ main div.Contest a:hover {
 }
 
 .year-title {
-    background: radial-gradient(ellipse 100% 100% at 50% -45px, #e36c6c47, transparent 100%);
+    background: radial-gradient(ellipse 100% 100% at 50% -45px, #14963147, transparent 100%);
 }
 
 .archive-button {
@@ -585,7 +585,10 @@ main div.Contest a:hover {
     }
 
     .archive-image {
-        height: 200px;
+        height: 280px;
+    }
+    .archive-image img {
+        height: -webkit-fill-available;
     }
 }
 
@@ -603,7 +606,7 @@ main div.Contest a:hover {
     }
 
     .archive-image {
-        height: 250px;
+        height: 310px;
     }
 }
 

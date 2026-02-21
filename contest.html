@@ -15,7 +15,7 @@ title: PAGMT | Palo Alto Girls Math Tournament
                 <div class="card-body text-center">
                     <h2>TIME & LOCATION</h2>
                     <p class="h5">
-                        PAGMT 2025 will be held at Palo Alto High School's MAC (Media Arts Center) in Palo Alto, California on Friday, May 9th, 2025 from 5:00 PM to 8:30 PM. Pizza and boba will be provided for all competitors for dinner.
+                        {{site.data.contest.location}}
                     </p>
                     <p class="h5">
                         Click <a href="/docs/Schedule & Location.pdf#zoom=36" target="_blank">here</a> for more details.
@@ -29,9 +29,7 @@ title: PAGMT | Palo Alto Girls Math Tournament
                 <div class="card-body text-center">
                     <h2>ELIGIBILITY</h2>
                     <p class="h5">
-                        PAGMT is open to all middle schoolers who identify as girls. 
-                        While we are aimed mostly towards PAUSD students, students from other schools are welcome to join as well! 
-                        Any experience level is welcome, and elementary students are also encouraged to join.
+                        {{site.data.contest.eligibility}}
                     </p>
                 </div>
             </div>
@@ -44,8 +42,7 @@ title: PAGMT | Palo Alto Girls Math Tournament
                 <div class="card-body text-center">
                     <h2>MATERIALS</h2>
                     <p class="h5">
-                        Participants should bring their own pencils, pens, and erasers.
-                        Scratch paper will be provided.
+                        {{site.data.contest.materials}}
                     </p>
                 </div>
             </div>
@@ -65,7 +62,7 @@ title: PAGMT | Palo Alto Girls Math Tournament
                 <div class="card-body text-center">
                     <h2>PROBLEMS</h2>
                     <p class="h5">
-                        Problems will be sorted in ascending difficulty and cover a variety of topics including algebra, geometry, number theory, and combinatorics.
+                        {{site.data.contest.problems}}
                     </p>
                 </div>
             </div>
@@ -78,23 +75,11 @@ title: PAGMT | Palo Alto Girls Math Tournament
                 <div class="card-body text-center">
                     <h2>PRIZES</h2>
                     
-                    <p class="h5">1st: $150 Amazon gift card</p>
-                    <p class="h5">2nd: $130 Amazon gift card</p>
-                    <p class="h5">3rd: $110 Amazon gift card</p>
-                    <p class="h5">4th: $90  Amazon gift card</p>
-                    <p class="h5">5th: $70  Amazon gift card</p>
-                    <p class="h5">6th: $50  Amazon gift card</p>
-                    <p class="h5">7th: $50  Amazon gift card</p>
-                    <p class="h5">8th-10th: $25  Amazon gift card</p>
-        
+                    {% for p in site.data.contest.prizes %}
+                    <p class="h5">{{p.place}}: {{p.prize}}</p>
+                    {% endfor %}
 
-                    <p class="h5">11-15th: Distinguished Honorable Mention</p>
-                    <p class="h5">16th-20th: Honorable Mention</p>
-                    <p class="h5">Raffle prizes: $350 AJ Tutoring Coupon for Math Classes, 4 $25 AoPS coupons, $25 Books Inc. Gift Card, $50 Sweet 55 Gift Card</p>
-                    <p class="h5">Estimation prize: $50 Piazza gift card</p>
-                    <p class="h5">
-                        MORE TBD
-                    </p>
+                    <p class="h5">MORE TBD</p>
                 </div>
             </div>
         </div>
@@ -166,7 +151,7 @@ title: PAGMT | Palo Alto Girls Math Tournament
                                 <h4> All competitors are expected to adhere to academic honesty. </h4>
                                 <p>- Students’ work and solutions to each problem should be of their own, and no discussion is allowed until after the contest window</p>
                                 <p>- Absolutely NO electronic devices are allowed as aids or communication devices during the rounds</p>
-                                <p>- Other tools outside of writing utensils, erasers, and blank paper are not allowed.<br>
+                                <p>- Other tools besides writing utensils, erasers, and blank paper are not allowed.<br>
                                     This includes but is not limited to rulers, compasses, protractors, abaci, calculators, and graph paper</p>
                                 <p>- Any individual who attempts to cheat will be disqualified</p>
                                 <p>- Any futher rule clarifications may be asked prior to the start of the contest</p>

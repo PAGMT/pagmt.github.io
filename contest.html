@@ -73,12 +73,37 @@ title: PAGMT | Palo Alto Girls Math Tournament
         <div class="col">
             <div class="glass-card card card-border h-100">
                 <div class="card-body text-center">
-                    <h2>PRIZES</h2>
+                    <h2>PRIZES (Senior Division)</h2>
                     
-                    {% for p in site.data.contest.prizes %}
+                    {% for p in site.data.contest.sprizes %}
                     <p class="h5">{{p.place}}: {{p.prize}}</p>
                     {% endfor %}
 
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="glass-card card card-border h-100">
+                <div class="card-body text-center">
+                    <h2>PRIZES (Junior Division)</h2>
+                    
+                    {% for p in site.data.contest.jprizes %}
+                    <p class="h5">{{p.place}}: {{p.prize}}</p>
+                    {% endfor %}
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row row-cols-1 row-cols-sm-2 g-4 mx-2 my-1 px-1">
+        <div class="col">
+            <div class="glass-card card card-border h-100">
+                <div class="card-body text-center">
+                    <h2>OTHER PRIZES</h2>
+                    
+                    {% for p in site.data.contest.oprizes %}
+                    <p class="h5">{{p.place}}: {{p.prize}}</p>
+                    {% endfor %}
                     <p class="h5">MORE TBD</p>
                 </div>
             </div>
@@ -87,14 +112,12 @@ title: PAGMT | Palo Alto Girls Math Tournament
             <div class="glass-card card card-border h-100">
                 <div class="card-body text-center">
                     <h2>CONTEST FORMAT</h2>
-                    <p class="h5">There will be 1 exam with the following specifications:</p>
-                    <p class="h5">Free Response</p>
-                    <p class="h5">Individual</p>
-                    <p class="h5">1 hour</p>
-                    <p class="h5">30 math questions, 1 estimation question</p>
-                    <p class="h5">There will be <b>no</b> appeals or re-grades</p>
-                    <p class="h5"> <a href="/docs/PAGMT_Problem_Set_Rules.pdf" target="_blank">Click here for more info</a></p>
-                    
+                    <ul style="text-align: left;">
+                        {% for f in site.data.contest.format %}
+                        <li class="h5">{{f}}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
@@ -114,19 +137,19 @@ title: PAGMT | Palo Alto Girls Math Tournament
                     <div id="scheduleContent" class="accordion-collapse collapse" aria-labelledby="schedule">
                         <div class="accordion-body pt-0">
                             <div class="border-top pt-3">
-                                <p class="h5"> 4:45 — 5:15 Check-In</p>
+                                <p class="h5"> 4:15 — 4:45 Check-In</p>
 
-                                <p class="h5"> 5:15 — 5:30 Opening Ceremony/Rules (for competitors)</p>
+                                <p class="h5"> 4:45 — 5:00 Opening Ceremony/Rules/Finding Rooms (for competitors)</p>
 
-                                <p class="h5"> 5:30 — 6:30 Contest Window (for competitors)</p>
+                                <p class="h5"> 5:00 — 6:00 Contest Window (for competitors)</p>
 
-                                <p class="h5"> 6:30 — 7:00 Free Pizza Dinner (for competitors)</p>
+                                <p class="h5"> 6:00 — 6:45 Free Pizza Dinner (for competitors)</p>
 
-                                <p class="h5"> 7:00 — 7:30 Information on STEM opportunities at Paly and our sponsors (for everyone)</p>
+                                <p class="h5"> 6:45 — 7:00 Messages from Sponsors (for everyone)</p>
 
-                                <p class="h5"> 7:30 — 8:00 Math talk by Stanford mathematics professor and 3-time IMO gold medalist Eugenia Malinnikova (for everyone)</p>
+                                <p class="h5"> 7:00 — 7:30 Math talk (for everyone)</p>
 
-                                <p class="h5"> 8:00 — 8:30 Awards Ceremony (for everyone)</p>
+                                <p class="h5"> 7:30 — 8:00 Awards Ceremony (for everyone) (Guest speaker TBD)</p>
 
                                 <p class="h5"> *all times are in PT</p>
                             </div>
@@ -149,12 +172,14 @@ title: PAGMT | Palo Alto Girls Math Tournament
                         <div class="accordion-body pt-0">
                             <div class="border-top pt-3">
                                 <h4> All competitors are expected to adhere to academic honesty. </h4>
-                                <p>- Students’ work and solutions to each problem should be of their own, and no discussion is allowed until after the contest window</p>
-                                <p>- Absolutely NO electronic devices are allowed as aids or communication devices during the rounds</p>
-                                <p>- Other tools besides writing utensils, erasers, and blank paper are not allowed.<br>
-                                    This includes but is not limited to rulers, compasses, protractors, abaci, calculators, and graph paper</p>
-                                <p>- Any individual who attempts to cheat will be disqualified</p>
-                                <p>- Any futher rule clarifications may be asked prior to the start of the contest</p>
+                                <ul>
+                                    <li>Students’ work and solutions to each problem should be of their own, and no discussion is allowed until after the contest window.</li>
+                                    <li>Absolutely NO electronic devices are allowed as aids or communication devices during the rounds.</li>
+                                    <li>Other tools besides writing utensils, erasers, and blank paper are not allowed.<br>
+                                        This includes but is not limited to rulers, compasses, protractors, abaci, calculators, and graph paper.</li>
+                                    <li>Any individual who attempts to cheat will be disqualified.</li>
+                                    <li>Any futher rule clarifications may be asked prior to the start of the contest.</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -170,52 +195,35 @@ title: PAGMT | Palo Alto Girls Math Tournament
             <div class = "sponsor-tier" style="color: #ffd700;">GOLD</div>
             
             <div class="row">
+                {% for sponsor in site.data.sponsors.gold %}
                 <div class="col-lg-4 col-12">
-                    <a href="https://mathprize.atfoundation.org/" target="_blank"><img src="/images/Sponsor Logos/Gold/mpfg.png" class="w-75" alt="Math Prize for Girls"></a>
+                    <a href="{{ sponsor.link }}" target="_blank"><img src="{{ sponsor.logo }}" class="w-50" alt="{{ sponsor.name }}"></a>
                 </div>
-                <div class="col-lg-4 col-12">
-                    <a href="https://palyptsa.paloaltopta.org/" target="_blank"><img src="/images/Sponsor Logos/Gold/paly_ptsa.png" class="w-75" alt="PTSA"></a>
-                </div>
+                {% endfor %}
             </div>
 
             <div class = "sponsor-tier" style="color: #eaeaea;">SILVER</div>
 
             <div class="row">
+                {% for sponsor in site.data.sponsors.silver %}
                 <div class="col-lg-4 col-12">
-                    <a href="https://www.mrsunteausa.com/" target="_blank"><img src="/images/Sponsor Logos/Silver/MrSun.png" class="w-25" alt="Mr. Sun Boba"></a>
+                    <a href="{{ sponsor.link }}" target="_blank"><img src="{{ sponsor.logo }}" class="w-50" alt="{{ sponsor.name }}"></a>
                 </div>
-                <div class="col-lg-4 col-12">
-                    <a href="https://www.janestreet.com/" target="_blank"><img src="/images/Sponsor Logos/Silver/JaneStreet.png" class="w-75" alt="Jane Street"></a>
-                </div>
-                <div class="col-lg-4 col-12">
-                    <a href="https://www.ajtutoring.com/" target="_blank"><img src="/images/Sponsor Logos/Silver/AJTutoring.png" class="w-25" alt="AJ Tutoring"></a>
-                </div>
-                <div class="col-lg-4 col-12">
-                    <a href="https://www.hudsonrivertrading.com/" target="_blank"><img src="/images/Sponsor Logos/Silver/HRT.png" class="w-50" alt="Hudson River Trading"></a>
-                </div>
+                {% endfor %}
             </div>
             
-            <div class = "sponsor-tier" style="color: #CD7F32;">BRONZE</div>
+            <div class = "sponsor-tier" style="color: #CD7F32;">RAFFLE SPONSORS</div>
 
             <div class="row">
+                {% for sponsor in site.data.sponsors.bronze %}
                 <div class="col-lg-4 col-12">
-                    <a href="https://piazzaslovesfood.com/" target="_blank"><img src="/images/Sponsor Logos/Bronze/Piazzas.png" class="w-75" alt="Piazza's Fine Foods"></a>
+                    <a href="{{ sponsor.link }}" target="_blank"><img src="{{ sponsor.logo }}" class="w-50" alt="{{ sponsor.name }}"></a>
                 </div>
-                <div class="col-lg-4 col-12">
-                    <a href="https://booksinc.net/" target="_blank"><img src="/images/Sponsor Logos/Bronze/BooksInc.png" class="w-75" alt="Books Inc."></a>
-                </div>
-                <div class="col-lg-4 col-12">
-                    <a href="https://www.sweet55.com/" target="_blank"><img src="/images/Sponsor Logos/Bronze/Sweet55.jpg" class="w-75" alt="Sweet55"></a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-12">
-                    <a href="https://artofproblemsolving.com/" target="_blank"><img src="/images/Sponsor Logos/Bronze/AoPS.png" class="w-75" alt="AoPS"></a>
-                </div>
+                {% endfor %}
             </div>
             
 
-            <div class="my-5 fs-6" style="letter-spacing: 2px;">Contact us at <a href="mailto:palymathclub@gmail.com">palymathclub@gmail.com</a> for any questions. Find our sponsorship prospectus <a href="/docs/Sponsorship Prospectus.pdf#zoom=36" target="_blank">here</a>.</div>
+            <div class="my-5 fs-6" style="letter-spacing: 2px;">Contact us at <a href="mailto:palymathclub@gmail.com">palymathclub@gmail.com</a> for any questions. </div>
         </div>
     </div>
 </main>

@@ -1,0 +1,21 @@
+gold:
+  - name: "PTSA"
+    logo: "images/Sponsor Logos/Gold/paly_ptsa.png"
+    link: "https://palyptsa.paloaltopta.org/"
+  - name: "Athemath"
+    logo: "images/Sponsor Logos/Gold/athemath.png"
+    link: "https://athemath.org/"
+  - name: "Hudson River Trading"
+    logo: "images/Sponsor Logos/Gold/HRT.png"
+    link: "https://www.hudsonrivertrading.com/"
+silver:
+  - name: "Jane Street"
+    logo: "images/Sponsor Logos/Silver/JaneStreet.png"
+    link: "https://www.janestreet.com/"
+bronze:
+  - name: "Sweet 55"
+    logo: "images/Sponsor Logos/Bronze/Sweet55.jpg"
+    link: "https://sweet55.com/"
+  - name: "AJ Tutoring"
+    logo: "images/Sponsor Logos/Bronze/AJTutoring.png"
+    link: "https://www.ajtutoring.com/"

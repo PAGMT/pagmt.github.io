@@ -104,6 +104,44 @@ title: PAGMT | Palo Alto Girls Math Tournament
             </div>
         </div>
     </div>
+    <div class="Sponsors">
+        <div class="container">
+            <div class="display-1 fw-medium">OUR SPONSORS</div>
+                
+            <div class = "sponsor-tier" style="color: #ffd700;">GOLD</div>
+            
+            <div class="row">
+                {% for sponsor in site.data.sponsors.gold %}
+                <div class="col-lg-4 col-12">
+                    <a href="{{ sponsor.link }}" target="_blank"><img src="{{ sponsor.logo }}" class="w-50" alt="{{ sponsor.name }}"></a>
+                </div>
+                {% endfor %}
+            </div>
+
+            <div class = "sponsor-tier" style="color: #eaeaea;">SILVER</div>
+
+            <div class="row">
+                {% for sponsor in site.data.sponsors.silver %}
+                <div class="col-lg-4 col-12">
+                    <a href="{{ sponsor.link }}" target="_blank"><img src="{{ sponsor.logo }}" class="w-50" alt="{{ sponsor.name }}"></a>
+                </div>
+                {% endfor %}
+            </div>
+            
+            <div class = "sponsor-tier" style="color: #CD7F32;">RAFFLE SPONSORS</div>
+
+            <div class="row">
+                {% for sponsor in site.data.sponsors.bronze %}
+                <div class="col-lg-4 col-12">
+                    <a href="{{ sponsor.link }}" target="_blank"><img src="{{ sponsor.logo }}" class="w-50" alt="{{ sponsor.name }}"></a>
+                </div>
+                {% endfor %}
+            </div>
+            
+
+            <div class="my-5 fs-6" style="letter-spacing: 2px;">Contact us at <a href="mailto:palymathclub@gmail.com">palymathclub@gmail.com</a> for any questions. </div>
+        </div>
+    </div>
 </div>
 
 

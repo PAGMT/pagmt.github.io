@@ -8,13 +8,18 @@
   image: oscar.png
   description: Oscar is a sophomore at Palo Alto High School. Outside of math, he enjoys competitive programming, astronomy and science fiction. He is excited to create problems which require interesting insights to solve.
 
+- name: Inhoo Chang
+  role: Treasurer
+  image: inhoo.png
+  description: Inhoo is a junior at Palo Alto High School. He enjoys taking part in mathematics competitions with friends. Outside of math, he participates in the Science Olympiad and enjoys reading and writing stories.
+
 - name: Joycelyn Zhou
   role: Outreach Manager
   image: joycelyn.png
   description: Joycelyn is a sophomore at Palo Alto High School. She likes attending math competitions. Beyond math, she likes to do robotics and play field hockey. 
 
 - name: Kaitlin Ye
-  role: Technical Manager
+  role: Tech Manager
   image: kaitlin.JPG
   description: Kaitlin is a sophomore at Palo Alto High School. She enjoys the problem solving aspect of competition math and also enjoys programming, robotics, and softball.
 

@@ -1,34 +1,44 @@
 - name: Krittika Chandra
-  role: Organizer
+  role: Logistics Manager
   image: krittika.png
-  description: Krittika is a freshman at Palo Alto High School. She is a 3-time USAJMO qualifier and has participated in a few math summer programs. Outside of math, she likes competitive programming and she plays violin in Paly Orchestra.
+  description: Krittika is a sophomore at Palo Alto High School. She enjoys competition math and has participated in a few math summer programs such as MOP. She is also starting math research this year. Outside of math, she enjoys playing violin in Paly Orchestra.
 
 - name: Oscar Varodayan
-  role: Organizer
+  role: Problem Writing Manager
   image: oscar.png
-  description: Oscar is a freshman at Palo Alto High School. He is a 3-time AIME qualifier and has participated in many competitions such as MATHCOUNTS and BAMO. Other than math, Oscar enjoys competitive programming, science fiction and astronomy. He is excited to create problems that require interesting insights to solve.
-
-- name: Lucas Lin
-  role: Organizer
-  image: lucas.png
-  description: Lucas is a freshman at Palo Alto High School. He has participated in a few math summer programs. Besides doing math, Lucas enjoys Physics, participating in the Science Olympiad, and playing tennis. 
-
-- name: Jade Zhang
-  role: Organizer
-  image: jade.png
-  description: Jade is a junior at Palo Alto High School. She is an AIME qualifier and has participated in the Ross Mathematics Program during the summer of 2024. In addition to math, she enjoys running, reading, and playing ultimate frisbee.
+  description: Oscar is a sophomore at Palo Alto High School. Outside of math, he enjoys competitive programming, astronomy and science fiction. He is excited to create problems which require interesting insights to solve.
 
 - name: Joycelyn Zhou
-  role: Organizer
+  role: Outreach Manager
   image: joycelyn.png
-  description: Joycelyn is a freshman at Palo Alto High School. She has attended AIME multiple times and has participated in several math competitions. Outside of math, she also participates on the PALY robotics and field hockey team.
+  description: Joycelyn is a sophomore at Palo Alto High School. She likes attending math competitions. Beyond math, she likes to do robotics and play field hockey. 
 
 - name: Kaitlin Ye
-  role: Organizer
-  image: kaitlin.png
-  description: Kaitlin is a freshman at Palo Alto High School. She is a 2-time AIME qualifier and has also participated in a few other math competitions. Outside of math, she enjoys programming and playing softball.
+  role: Technical Manager
+  image: kaitlin.JPG
+  description: Kaitlin is a sophomore at Palo Alto High School. She enjoys the problem solving aspect of competition math and also enjoys programming, robotics, and softball.
 
 - name: Beinan Ren
-  role: Organizer
+  role: Problem Writer
   image: beinan.png
-  description: Beinan Ren is a freshman who loves math!
+  description: Beinan is a sophomore at Palo Alto High School who enjoys a healthy balance of competitive and school math. He explores logical reasoning beyond math through speech and debate. Other than academics, he loves to run, lift weights, and try new foods. 
+
+- name: Lucas Lin
+  role: Problem Writer
+  image: lucas.png
+  description: Lucas is a sophomore at Palo Alto High School. He enjoys exploring both math and physics, especially the intersection between them. He has attended a few math summer programs and outside of math, he enjoys playing tennis, speech and debate, and thinking about theoretical physics.
+
+- name: Fan Jin
+  role: Problem Writer
+  image: fan.png
+  description: Fan is a freshman at Palo Alto High School. She likes math and enjoys going to math competitions. Outside of math, she enjoys playing chess with her friends in Paly Chess Club, learning microeconomics concepts, and reading realistic fiction books.
+
+- name: Sayan Singh
+  role: Problem Writer
+  image: sayan.png
+  description: Sayan is a freshman at Palo Alto High School. He loves to do math competitions. Outside of math, he likes to code and do physics, as well as participate in Boy Scouts activities. He also enjoys listening to and playing music in his free-time.
+
+- name: Jade Zhang
+  role: Past Organizer
+  image: jade.png
+  description: Jade is an AIME qualifier and has participated in the Ross Mathematics Program during the summer of 2024. In addition to math, she enjoys running, reading, and playing ultimate frisbee.

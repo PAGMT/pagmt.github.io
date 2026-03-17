@@ -31,3 +31,6 @@ bronze:
   - name: "Art of Problem Solving"
     logo: "images/Sponsor Logos/Bronze/AoPS.png"
     link: "https://artofproblemsolving.com/"
+  - name: "AoPS Academy"
+    logo: "images/Sponsor Logos/Bronze/AoPSAcademy.png"
+    link: "https://aopsacademy.org/"

@@ -100,11 +100,16 @@ title: PAGMT | Palo Alto Girls Math Tournament
             <div class="glass-card card card-border h-100">
                 <div class="card-body text-center">
                     <h2>OTHER PRIZES</h2>
-                    
+                    <p class="h5" style="text-align: left; font-weight: bold;">Raffle Prizes: </p>
+                    <ul style="text-align: left;">
+                        {% for p in site.data.contest.raffle %}
+                        <li class="h5">{{p}}</li>
+                        {% endfor %}
+                    </ul>
                     {% for p in site.data.contest.oprizes %}
-                    <p class="h5">{{p.place}}: {{p.prize}}</p>
+                    <p class="h5" style="text-align: left;"><span style="font-weight: bold;">{{p.place}}:</span> {{p.prize}}</p>
                     {% endfor %}
-                    <p class="h5">MORE TBD</p>
+                    <p class="h5" style="text-align: left;">MORE TBD</p>
                 </div>
             </div>
         </div>

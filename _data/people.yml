@@ -23,16 +23,6 @@
   image: kaitlin.JPG
   description: Kaitlin is a sophomore at Palo Alto High School. She enjoys the problem solving aspect of competition math and also enjoys programming, robotics, and softball.
 
-- name: Beinan Ren
-  role: Problem Writer
-  image: beinan.png
-  description: Beinan is a sophomore at Palo Alto High School who enjoys a healthy balance of competitive and school math. He explores logical reasoning beyond math through speech and debate. Other than academics, he loves to run, lift weights, and try new foods. 
-
-- name: Lucas Lin
-  role: Problem Writer
-  image: lucas.png
-  description: Lucas is a sophomore at Palo Alto High School. He enjoys exploring both math and physics, especially the intersection between them. He has attended a few math summer programs and outside of math, he enjoys playing tennis, speech and debate, and thinking about theoretical physics.
-
 - name: Fan Jin
   role: Problem Writer
   image: fan.png
@@ -42,6 +32,16 @@
   role: Problem Writer
   image: sayan.png
   description: Sayan is a freshman at Palo Alto High School. He loves to do math competitions. Outside of math, he likes to code and do physics, as well as participate in Boy Scouts activities. He also enjoys listening to and playing music in his free-time.
+
+- name: Beinan Ren
+  role: Past Organizer
+  image: beinan.png
+  description: Beinan enjoys a healthy balance of competitive and school math. He explores logical reasoning beyond math through speech and debate. Other than academics, he loves to run, lift weights, and try new foods. 
+
+- name: Lucas Lin
+  role: Past Organizer
+  image: lucas.png
+  description: Lucas enjoys exploring both math and physics, especially the intersection between them. He has attended a few math summer programs and outside of math, he enjoys playing tennis, speech and debate, and thinking about theoretical physics.
 
 - name: Jade Zhang
   role: Past Organizer

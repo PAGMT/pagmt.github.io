@@ -12,65 +12,46 @@ title: Archive | Palo Alto Girls Math Tournament
     <div id="glass-card-container" class="container">
         {% for contest in site.data.archive %}
             <div class="glass-card card card-border my-3 overflow-hidden">
-                <div class="row row-cols-1 row-cols-md-2 w-100 align-self-center">
-                    <div class="col col-lg-6 col-md-4 p-0">
-                        <div class="archive-image card-body text-center p-0">
-                            <img class="w-100" src="{{contest.image}}" style="object-fit: cover;">
-                        </div>
+            <div class="row row-cols-1 row-cols-md-2 w-100 align-self-center g-0">
+                <div class="col col-lg-6 col-md-4 p-0 d-flex">
+                    <div class="archive-image w-100 p-0">
+                        <img class="w-100 h-100" src="{{contest.image}}" style="object-fit: cover; display: block;">
                     </div>
-                    <div class="col col-lg-6 col-md-8 p-0 d-flex flex-column align-items-center">
+                </div>
 
-                        <div class="row d-flex row-cols-1 w-100 text-center pt-2 year-title">
-                            <p class="h1">{{contest.year}}</p>
-                        </div>
-                        <div class="row flex-lg-fill d-flex  row-cols-1 row-cols-md-2 w-100 pb-md-1 pb-lg-0">
-                            <div class="col d-flex flex-column px-3 align-items-center pb-sm-3 pb-md-0 justify-content-evenly text-center">
-                                <p class="h5" style="z-index: 4;">
-                                    {{contest.message}}
-                                </p>
-                                <p class="h1" style="z-index: 4;">
-                                    <a href="{{contest.problemset}}" target="_blank" >
-                                        Problems + Answers
-                                    </a>
-                                </p>
-                                <p class="h1" style="z-index: 4;">
-                                    <a href="{{contest.slides}}" target="_blank" >
-                                        Awards Slides
-                                    </a>
-                                </p>
-                            </div>
-                            <div class="col d-flex flex-column px-3 pb-sm-3 pb-md-0 justify-content-center">
-                                <p class="h5 align-self-center">Awards Cutoff</p>
-                                <p class="m-0">top 75%: {{contest.top75}}</p> 
-                                <p class="m-0">top 50%: {{contest.top50}}</p>
-                                <p class="m-0">top 20: {{contest.top20}}</p>
-                                <p class="m-0">top 10: {{contest.top10}}</p>
-                                <p class="m-0">top score (1st place): {{contest.top1}}</p>
-                                <p class="m-0">*ties broken by estimation</p>
-                                <p class="m-0 align-self-center">max possible score: {{contest.maxscore}}</p>
-                                <p class="m-0 align-self-center">average score: {{contest.average}}</p>
-                                
-                            </div>
-                        </div>
-                        <!--
-                        <div class="row flex-fill d-flex flex-grow-1 overflow-visible">
-                            <div class="col d-flex flex-column flex-grow-1">
-                                <h1 class="archive-sponsor">Sponsors</h1>
-                                <div class="marquee flex-grow-1 overflow-visible">
-                                    <div class="marquee-track h-100 overflow-visible">
-                                        {% for sponsor in contest.sponsors %}
-                                        <div class="marquee-item" style="height: 80%; display: flex; align-items: center; justify-content: center;">
-                                            <img src="/images/{{sponsor.image}}" class="d-block" alt="{{sponsor.name}}" height="80%" style="object-fit: contain;">
-                                        </div>
-                                        {% endfor %}
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        -->
+                <div class="col col-lg-6 col-md-8 p-0 d-flex flex-column align-items-center">
+                    <div class="row d-flex row-cols-1 w-100 text-center pt-2 year-title">
+                        <p class="h1">{{contest.year}}</p>
                     </div>
-                </div>  
+                    <div class="row flex-lg-fill d-flex row-cols-1 row-cols-md-{{contest.comps.size | plus: 1}} w-100 pb-md-1 pb-lg-0">
+                        <div class="col d-flex flex-column px-3 align-items-center pb-sm-3 pb-md-0 justify-content-evenly text-center">
+                            <p class="h5" style="z-index: 4;">
+                                {{contest.message}}
+                            </p>
+                            {% for item in contest.links %}
+                            <p class="h5" style="z-index: 4;">
+                                <a href="{{item.url}}" target="_blank">
+                                    {{item.name}}
+                                </a>
+                            </p>
+                            {% endfor %}
+                        </div>
+                        {% for comp in contest.comps %}
+                        <div class="col d-flex flex-column px-3 pb-sm-3 pb-md-0 justify-content-center">
+                            <p class="h5 align-self-center">{{comp.title}}</p>
+                            <p class="m-0">top 75%: {{comp.top75}}</p>
+                            <p class="m-0">top 50%: {{comp.top50}}</p>
+                            <p class="m-0">top 20: {{comp.top20}}</p>
+                            <p class="m-0">top 10: {{comp.top10}}</p>
+                            <p class="m-0">top score: {{comp.top1}}</p>
+                            <p class="m-0 align-self-center">max possible score: {{comp.maxscore}}</p>
+                            <p class="m-0 align-self-center">average score: {{comp.average}}</p>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
             </div>
+        </div>
         {% endfor %}
     </div>
 

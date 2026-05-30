@@ -1,12 +1,46 @@
+- year: 2026
+  links:
+  - name: "Junior Division Test + Guidelines"
+    url: docs/2026/PAGMT_Junior_Division_Round_2026.pdf
+  - name: "Senior Division Test + Guidelines"
+    url: docs/2026/PAGMT_Senior_Division_Round_2026.pdf
+  - name: "Slides"
+    url: https://docs.google.com/presentation/d/1Y7xkoyOLrHKuJGaaKHuMxdKnhDm8t4SYrbalQTO438U/edit?usp=sharing
+  - name: "Photo Album"
+    url: https://photos.app.goo.gl/Juu85pLrXCxsAm7o9
+  image: images/thumbnails/pagmt2026.JPG
+  message: "Guest Speaker: Katy Woo"
+  comps:
+  - title: "Junior Division Awards Cutoffs"
+    top75: 11
+    top50: 14
+    top20: 20
+    top10: 23
+    top1: 28
+    maxscore: 30
+    average: 14.688
+  - title: "Senior Division Awards Cutoffs"
+    top75: 9
+    top50: 13
+    top20: 17
+    top10: 22
+    top1: 27
+    maxscore: 30
+    average: 14.262
 - year: 2025
-  problemset: docs/PAGMT_Problem_Set_Published.pdf
-  slides: https://docs.google.com/presentation/d/1oYM_Fd3nE85zOL5FKFDQdlxXA8WVN8xmyx3rnsuzc9k/edit?usp=sharing
+  links:
+  - name: "Problems & Answers"
+    url: docs/2025/PAGMT_Problem_Set_Published.pdf
+  - name: "Slides"
+    url: https://docs.google.com/presentation/d/1oYM_Fd3nE85zOL5FKFDQdlxXA8WVN8xmyx3rnsuzc9k/edit?usp=sharing
   image: images/thumbnails/pagmt2025.jpg
   message: "Guest Speaker: Eugenia Malinnikova"
-  top75: 5
-  top50: 8
-  top20: 10
-  top10: 17
-  top1: 27
-  maxscore: 30
-  average: 9.127
+  comps:
+  - title: "Awards Cutoffs"
+    top75: 5
+    top50: 8
+    top20: 10
+    top10: 17
+    top1: 27
+    maxscore: 30
+    average: 9.127
